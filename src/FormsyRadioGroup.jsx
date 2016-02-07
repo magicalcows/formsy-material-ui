@@ -16,6 +16,7 @@ let FormsyRadioGroup = React.createClass({
 
   componentDidMount: function () {
     this.setValue(this._muiComponent.getSelectedValue());
+    if (this.props.onChange) this.props.onChange(event, value);
   },
 
   _setMuiComponentAndMaybeFocus: _setMuiComponentAndMaybeFocus,

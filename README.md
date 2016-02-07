@@ -53,6 +53,13 @@ var FormsyTime = FMUI.FormsyTime;
 var FormsyToggle = FMUI.FormsyToggle;
 ```
 
+### Events
+
+As of 0.3.8 events that are used in components (eg, have a binding to their own internal method) are checked for 
+in `this.props`, and when found, are called with Material-UI's proposed 
+[Standardized Callback Signatures](https://github.com/callemall/material-ui/issues/2957).  An example usage of this
+would be to use an `onChange` for the FormsySelect and receive notifications when it changes.  
+
 ### Examples
 
 #### Example App

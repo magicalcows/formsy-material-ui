@@ -12,6 +12,7 @@ let FormsyToggle = React.createClass({
 
   handleValueChange: function (event, value) {
     this.setValue(value);
+    if (this.props.onToggle) this.props.onToggle(event, value);
   },
 
   componentDidMount: function () {
